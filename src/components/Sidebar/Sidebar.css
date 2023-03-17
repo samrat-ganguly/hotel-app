@@ -1,0 +1,34 @@
+.Sidebar {
+  width: 200px;
+  height: 100vh;
+  background: var(--clr-white);
+  border-radius: 20px;
+}
+.Sidebar .title,
+.Sidebar li {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-top: 40px;
+}
+.Sidebar .title {
+  gap: 20px;
+  color: rgb(50, 219, 163);
+}
+.Sidebar .title svg {
+  transform: scale(2);
+  color: rgb(50, 219, 163);
+}
+.Sidebar ul {
+  margin-top: 80px;
+}
+.Sidebar ul li {
+  gap: 40px;
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+.Sidebar ul li svg {
+  transform: scale(1.3);
+  place-self: center;
+}/*# sourceMappingURL=sidebar.css.map */

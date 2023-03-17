@@ -1,0 +1,42 @@
+.Navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  padding-right: 20px;
+  position: relative;
+  isolation: isolate;
+  .popup {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    background: var(--clr-white);
+    position: absolute;
+    right: 0%;
+    top: 95%;
+    border-radius: 10px;
+    z-index: 2;
+    li {
+      list-style: none;
+      text-decoration: none;
+    }
+  }
+  .popup::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: var(--clr-white);
+    position: absolute;
+    top: -5%;
+    left: 45%;
+    transform: rotate(45deg);
+    z-index: -1;
+  }
+
+  button {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+}
